@@ -6,7 +6,7 @@ services:
     tty: true        #docker run -t
     environment:
       QR_CODE_IMAGE_DIRECTORY: 'images'
-      QR_CODE_DEFAULT_URL: 'https://njit.edu'
-      QR_CODE_DEFAULT_FILE_NAME: 'default.png'
+      QR_CODE_DEFAULT_URL: 'https://hub.docker.com/repository/docker/db545/isqrcode'
+      QR_CODE_DEFAULT_FILE_NAME: 'dockerhub.png'
     volumes:
       - .:/home/myuser

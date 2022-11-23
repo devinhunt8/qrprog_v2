@@ -5,8 +5,8 @@ RUN apt-get update &&\
     adduser myuser
 ENV PATH="/home/myuser/.local/bin:${PATH}"
 ENV QR_CODE_IMAGE_DIRECTORY='images'
-ENV QR_CODE_DEFAULT_URL='https://njit.edu'
-ENV QR_CODE_DEFAULT_FILE_NAME='njit.png'
+ENV QR_CODE_DEFAULT_URL='https://hub.docker.com/repository/docker/db545/isqrcode'
+ENV QR_CODE_DEFAULT_FILE_NAME='dockerhub.png'
 WORKDIR /home/myuser
 COPY --chown=myuser:myuser . .
 RUN pip3 install -r requirements.txt
